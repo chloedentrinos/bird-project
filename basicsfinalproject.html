@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🦜 For the Love of Birds!</title>
+    <style>
+      h1,
+      h2,
+      h3,
+      p,
+      .author,
+      .readMore {
+        text-align: center;
+      }
+      hr,
+      p {
+        max-width: 85%;
+      }
+      img,
+      button {
+        display: block;
+      }
+      img,
+      .project {
+        margin: 0 auto;
+      }
+      button,
+      .project {
+        border: 2px solid blue;
+      }
+      h1 {
+        font-size: 70px;
+        margin: 30px 0;
+      }
+      h2 {
+        font-size: 40px;
+        display: block;
+        margin: 0 auto;
+        max-width: 78%;
+      }
+      h3 {
+        font-size: 30px;
+        text-decoration: underline;
+      }
+      hr {
+        border: 2px solid white;
+        background: white;
+      }
+      img {
+        max-width: 80%;
+        border-radius: 10px;
+      }
+      p {
+        font-size: 22px;
+        margin: 20px auto 10px;
+        line-height: 40px;
+      }
+      button {
+        margin: 30px auto 25px;
+        background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+        color: white;
+        font-size: 20px;
+        padding: 15px 20px;
+        border-radius: 15px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+        font-weight: bold;
+      }
+      button:hover {
+        background: transparent;
+        color: #3e6afc;
+        cursor: pointer;
+      }
+      .project {
+        max-width: 800px;
+        padding: 0 10px 18px;
+        background: linear-gradient(
+          109.6deg,
+          rgb(220, 196, 252, 0.8) 11.2%,
+          rgb(150, 199, 253, 0.8) 100.2%
+        );
+        border-radius: 30px;
+      }
+      .readMore {
+        font-size: 18px;
+      }
+      .author {
+        margin: 5px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project">
+      <h1>I LOVE BIRDS!</h1>
+      <hr />
+      <h2>It Doesn't Matter What Type Of Bird!</h2>
+      <hr />
+      <h3>All birds are worthy of love!</h3>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/012/388/original/_MG_1201_edited.jpg?1625519727"
+        alt="Three pineapple conures"
+      />
+      <p>
+        Birds come in various different shapes, sizes and personalities. There
+        is a bird out there for everyone, you just have to seek out and be
+        patient enough to wait for that connection. Whether you want a small and
+        cheecky bird, or one that is big and calm, you are bound to find at
+        least one perfect match. You just have to be brave enough to start that
+        journey.
+        <br />
+        <stan>
+          <strong>
+            Are
+            <em> YOU </em>
+            ready?
+          </strong>
+        </stan>
+      </p>
+      <div class="readMore">
+        <a
+          href="https://www.amazingfeatheredfriends.com/fun-facts"
+          target="_blank"
+          >Read more at Amazing Feathered Friends</a
+        >
+      </div>
+      <button>BUY A BIRD!</button>
+      <div class="author">Coded by Chloe Dentrinos</div>
+      <script>
+        function buyABird() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email?");
+          if (email.length) {
+            alert(
+              "Thanks " +
+                name +
+                ", we will be in touch. Meanwhile, keep loving birds! 🦜"
+            );
+          } else {
+            alert("No email = no birds for you! 🦜");
+          }
+        }
+
+        let buyABirdButton = document.querySelector("button");
+        buyABirdButton.addEventListener("click", buyABird);
+      </script>
+    </div>
+  </body>
+</html>
